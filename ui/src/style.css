@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body,
+.Content {
+    background: #bebe8a linear-gradient(30deg, #bebe8a 30%, #9b9b7a 70%);
+}
+
+.Content {
+    position: relative;
+    overflow: auto;
+    display: flex;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border-radius: 32px;
+    padding: 5px;
+    font-family: 'pf-tempesta-seven', monospace;
+    color: rgb(149, 222, 0);
+}
+
+.Monitor {
+    background: #212121 radial-gradient(circle at 80% 20%, #454545 0%, #212121 50%);
+    box-shadow: inset 1px -1px 10px 0 rgba(0, 0, 0, 0.2), inset -5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 32px;
+    flex-grow: 1;
+    border-radius: 75px / 45px;
+    overflow: auto;
+}
+
+.Monitor a {
+    color: rgb(149, 222, 0);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.root {
+    height: 100%;
+    width: 100%;
+}

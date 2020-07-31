@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "coveo-blitz-2020"
+version = "0.1.0"
+description = "Server code for blitz challenge."
+authors = ["Coveo"]
+packages = [ { include = 'blitz2020' } ]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+boto3 = "*"
+dataclasses-json = "*"
+configargparse = "*"
+numpy = "*"
+websockets = "*"
+
+
+[tool.poetry.dev-dependencies]
+asyncmock = "*"
+mypy = "*"
+xmlrunner = "*"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+
+[tool.poetry.scripts]
+blitz2020 = 'blitz2020.__main__:main'

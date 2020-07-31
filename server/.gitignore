@@ -1,0 +1,7 @@
+__pycache__
+test-reports
+*.pyc
+htmlcov/
+blitz2020/.coverage
+.coverage
+*.egg-info

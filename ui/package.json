@@ -1,0 +1,41 @@
+{
+    "name": "@germainbergeron/blitz-ui",
+    "version": "2020.0.9",
+    "dependencies": {
+        "@types/react": "^16.9.16",
+        "@types/react-dom": "^16.9.4",
+        "@types/underscore": "^1.9.4",
+        "konva": "^4.0.18",
+        "prettier": "^1.19.1",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-konva": "^16.10.1-0",
+        "tsjs": "^1.0.3",
+        "typescript": "^3.7.3",
+        "underscore": "^1.9.1"
+    },
+    "scripts": {
+        "start": "parcel src/index.tsx *.html",
+        "build": "parcel build *.html && webpack",
+        "test": "jest",
+        "lintfix": "prettier --write \"**/*.{scss,json,js,jsx,ts,tsx,md}\" && tslint -c ./tslint.json -p ./tsconfig.json --fix"
+    },
+    "main": "dist/index.js",
+    "types": "dist/definitions/index.d.ts",
+    "devDependencies": {
+        "@types/enzyme": "^3.10.4",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.0.23",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.15.1",
+        "enzyme-to-json": "^3.4.3",
+        "jest": "^24.9.0",
+        "jest-junit": "^10.0.0",
+        "parcel": "^1.12.4",
+        "ts-jest": "^24.2.0",
+        "ts-loader": "^6.2.1",
+        "webpack": "^4.41.3",
+        "webpack-cli": "^3.3.10"
+    },
+    "prettier": "tsjs/prettier-config"
+}

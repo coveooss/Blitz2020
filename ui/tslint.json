@@ -1,0 +1,6 @@
+{
+    "extends": ["tsjs/tslint-config"],
+    "linterOptions": {
+        "exclude": [".cache/**/*", "node_modules/**/*", "coverage/**/*"]
+    }
+}
